@@ -517,7 +517,7 @@ spec:
                 end
               end
               if condition.type == "Running" and condition.status == "True" then
-                hs.status = "Healthy"
+                hs.status = "Progressing"
                 hs.message = condition.message
               end
             end
@@ -538,14 +538,14 @@ spec:
                 return hs
               end
               if condition.type == "Running" and condition.reason == "Running" then
-                hs.status = "Healthy"
+                hs.status = "Progressing"
                 hs.message = condition.message
                 return hs
               end
             end
           end
         end
-        hs.status = "Healthy"
+        hs.status = "Progressing"
         return hs
     isc.ibm.com/CP4SThreatManagement:
       health.lua: |
