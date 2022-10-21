@@ -2,6 +2,7 @@ resources:
 # # IBM Software
 - argocd/operators/ibm-cp4ba-operator.yaml
 - argocd/instances/ibm-cp4ba-odm.yaml
+- argocd/instances/ibm-cp4ba-odm-ns.yaml
 ## Cloud Pak for Integration
 #- argocd/operators/ibm-ace-operator.yaml
 #- argocd/operators/ibm-apic-operator.yaml
