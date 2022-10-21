@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ibm-cp4ba-odm
+  name: ibm-cp4ba-odm-ns
   annotations:
     argocd.argoproj.io/sync-wave: "280"
   labels:
